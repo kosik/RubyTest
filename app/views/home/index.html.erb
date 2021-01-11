@@ -1,0 +1,35 @@
+<h1>List of Shorturls</h1>
+<div class="row ">
+    <div class="col-md-12" style="margin-top:20px;margin-bottom:20px">
+        <button type="button" onclick="window.location.href='/home/new'">Add a New URL</button>
+    </div>
+</div>
+<div class="row ">
+    <div class="col-md-2 border">
+        Short Url
+    </div>
+    <div class="col-md-4 border">
+        Full Url
+    </div>
+    <div class="col-md-4 border">
+        Title
+    </div>
+</div>
+<% @shorturls.each do |shorturl| %>
+    <div class="row">
+        <div class="col-md-2 border">
+            <%= shorturl.short_url %>
+        </div>
+        <div class="col-md-4 border">
+            <%= shorturl.full_url %>
+        </div>
+        <div class="col-md-4 border">
+            <%= shorturl.title %>
+        </div>
+    </div>
+<% end %>
+<div class="row ">
+    <div class="col-md-12" style="margin-top:20px;margin-bottom:20px">
+        <button type="button" onclick="window.location.href='/home/new'">Add a New URL</button>
+    </div>
+</div>
